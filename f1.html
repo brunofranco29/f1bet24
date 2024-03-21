@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Corrida F1</title>
+    <link rel="stylesheet" href="f1.css">
+</head>
+<body>
+    <div id="pista">
+        <div class="car blue" id="car1" data-piloto="1"></div>
+        <div class="car red" id="car2" data-piloto="2"></div>
+        <div class="car green" id="car3" data-piloto="3"></div>
+        <div class="car black" id="car4" data-piloto="4"></div>
+        <div class="car yellow" id="car5" data-piloto="5"></div>
+    </div>
+    <div id="saldo">Saldo: R$100</div>
+    <div id="apostas">
+        <input type="number" id="valorAposta" min="5" placeholder="Valor da aposta">
+        <select id="pilotos">
+            <option value="1">Piloto 1</option>
+            <option value="2">Piloto 2</option>
+            <option value="3">Piloto 3</option>
+            <option value="4">Piloto 4</option>
+            <option value="5">Piloto 5</option>
+        </select>
+        <button onclick="apostar()">Apostar</button>
+    </div>
+    <button onclick="correrNovamente()">Correr novamente</button>
+    <script src="f1.js"></script>
+</body>
+</html>
